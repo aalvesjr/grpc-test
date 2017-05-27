@@ -1,5 +1,7 @@
 # GRPC
 
+![example](http://i.imgur.com/bCyxjLv.png)
+
 A tiny test using GRPC between Golang and Ruby languages
 
   - [x] Server: Golang, Client: Golang
