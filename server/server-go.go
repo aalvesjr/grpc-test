@@ -46,6 +46,8 @@ var posts = map[int32]*pb.Post{
 type server struct{}
 
 func (server) Get(c context.Context, params *pb.SearchParams) (*pb.Post, error) {
+	log.Printf("PostID received: (%d)", params.Id)
+
 	post, ok := posts[params.Id]
 	if !ok {
 		return nil, fmt.Errorf("Post ID: %d, not found", params.Id)
